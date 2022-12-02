@@ -83,7 +83,10 @@ WHERE e.emp_id = '10012'" onClick="reply_click(this)">1.3.5</button>
                     <button name="1.3.6" class="btn btn-success btn-block" data-sql="a)4 columns 
 b)emp_id, from_date 
 c)emp_id" onClick="reply_click(this)">1.3.6</button>
-                    <button name="1.3.7" class="btn btn-success btn-block" data-sql="EMPTY" onClick="reply_click(this)">1.3.7</button>                
+                    <button name="1.3.7" class="btn btn-success btn-block" data-sql="A composite key in SQL is a group of several columns that are combined to uniquely identify each of the related rows. A combination of more than one column can uniquely identify any record even though a single column cannot uniquely identify any row.
+Following this definition, in dept_emp table (employees department’s table) its primary keys are “emp_id” and “dept_id”. Both represent data that we require to be there mandatorily due to are necessary for the other columns to exist (“from_date” and “to_date”).
+On the same way, the managers department’s table (dept_manager) have as primary keys “emp_id” and “dept_id” as well. Secondary keys are once again” from_date” and “to_date”, nevertheless they only share the name of the attribute because the data only belongs to the table that represents it.
+When it comes to salaries and titles, we can see they still have the same secondary keys, although their primary keys differ a bit if we compare them to the first two tables. This time “emp_id” and “from_date” are part of the primary keys, however the “title” attribute is added as primary key to titles table." onClick="reply_click(this)">1.3.7</button>                
                 </div>
                 <div class="col-lg-10 order-2 border-success">
                     <textarea id="commands" class="mb-5">TEXT</textarea>
