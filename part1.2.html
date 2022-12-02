@@ -64,9 +64,9 @@ PRIMARY KEY (trainer_no)
 )" onClick="reply_click(this)">1.2.6</button>
                     <button name="1.2.7" class="btn btn-success btn-block" data-sql="INSERT INTO emp_training (first_name, last_name, t_module) VALUES ('Joe', 'Bloggs', 'Google Docs');    
 INSERT INTO emp_training (first_name, last_name, t_module) VALUES ('Fred', 'Bloggs', 'Google Sheets');" onClick="reply_click(this)">1.2.7</button>
-                    <button name="1.2.8" class="btn btn-success btn-block" data-sql="EMPTY" onClick="reply_click(this)">1.2.8</button>
-                    <button name="1.2.9" class="btn btn-success btn-block" data-sql="EMPTY" onClick="reply_click(this)">1.2.9</button>
-                    <button name="1.2.10" class="btn btn-success btn-block" data-sql="EMPTY" onClick="reply_click(this)">1.2.10</button>
+                    <button name="1.2.8" class="btn btn-success btn-block" data-sql="DROP TABLE emp_training;" onClick="reply_click(this)">1.2.8</button>
+                    <button name="1.2.9" class="btn btn-success btn-block" data-sql="ALTER TABLE employees ADD email_address varchar(20);" onClick="reply_click(this)">1.2.9</button>
+                    <button name="1.2.10" class="btn btn-success btn-block" data-sql="UPDATE employees SET email_address = 'gfacello@gmail.com' WHERE emp_no = 10001;" onClick="reply_click(this)">1.2.10</button>
                 </div>
                 <div class="col-lg-10 order-2 border-success">
                     <textarea id="commands" class="mb-5">TEXT</textarea>
