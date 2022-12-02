@@ -55,12 +55,13 @@
                     <button name="1.2.3" class="btn btn-success btn-block" data-sql="SELECT * FROM employees WHERE gender = &quot;F&quot LIMIT 100" onClick="reply_click(this)">1.2.3</button>
                     <button name="1.2.4" class="btn btn-success btn-block" data-sql="SELECT * FROM employees WHERE last_name = &quot;Simmel&quot AND hire_date &lt; &quot;1986-01-01&quot LIMIT 100" onClick="reply_click(this)">1.2.4</button>
                     <button name="1.2.5" class="btn btn-success btn-block" data-sql="SELECT COUNT(*) AS total_with_B FROM employees WHERE last_name LIKE &quot;%B%&quot LIMIT 100" onClick="reply_click(this)">1.2.5</button>
-                    <button name="1.2.6" class="btn btn-success btn-block" data-sql="CREATE TABLE emp_training(
-trainer_no INT PRIMARY KEY AUTO_INCREMENT,
-first_name varchar(30) NOT NULL,
-last_name varchar(30) NOT NULL,
-t_module varchar(20)
-);" onClick="reply_click(this)">1.2.6</button>
+                    <button name="1.2.6" class="btn btn-success btn-block" data-sql="CREATE TABLE emp_training (
+trainer_no  INTEGER AUTO_INCREMENT,
+first_name  VARCHAR(30)  NOT NULL,
+last_name   VARCHAR(30)  NOT NULL,
+t_module    VARCHAR(20),
+PRIMARY KEY (trainer_no)
+)" onClick="reply_click(this)">1.2.6</button>
                     <button name="1.2.7" class="btn btn-success btn-block" data-sql="INSERT INTO emp_training (first_name, last_name, t_module) VALUES ('Joe', 'Bloggs', 'Google Docs');    
 INSERT INTO emp_training (first_name, last_name, t_module) VALUES ('Fred', 'Bloggs', 'Google Sheets');" onClick="reply_click(this)">1.2.7</button>
                     <button name="1.2.8" class="btn btn-success btn-block" data-sql="EMPTY" onClick="reply_click(this)">1.2.8</button>
